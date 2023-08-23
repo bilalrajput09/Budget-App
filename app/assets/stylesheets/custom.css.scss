@@ -44,3 +44,44 @@
   align-items: center;
   justify-content: center;
 }
+
+nav {
+  background-color: #3778c2;
+  color: white;
+}
+
+.items_container {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding: 1em;
+  align-items: center;
+  font-weight: 400;
+}
+
+.links_on_login_page {
+  text-align: center;
+}
+
+.links_on_login_page a {
+  text-decoration: none;
+  color: #d5d8db;
+}
+
+.img_container {
+  display: flex;
+  padding: 0.5em;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img_container img {
+  width: 30%;
+}
+
+.btn-login {
+  background-color: #3778c2;
+  border: none;
+  color: white;
+}
