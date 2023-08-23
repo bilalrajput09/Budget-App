@@ -17,6 +17,10 @@ gem "puma", "~> 5.0"
 
 # Bundle and transpile JavaScript [https://github.com/rails/jsbundling-rails]
 gem "jsbundling-rails"
+gem 'byebug', '~> 11.1', '>= 11.1.3'
+gem 'carrierwave', '~> 3.0'
+gem 'mini_magick'
+gem "devise"
 
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
 gem "turbo-rails"
