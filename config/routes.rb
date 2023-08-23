@@ -5,5 +5,10 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
   root "users#welcome"
-  resources :categories
+  resources :categories do
+    get "new_spending", to: "categories#new_spending"
+    post "new_spending", to:
+    "categories#create_spending"
+  end
+  
 end

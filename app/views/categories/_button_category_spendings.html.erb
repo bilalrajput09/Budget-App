@@ -1,0 +1,11 @@
+<div class="container-fluid">
+    <div class="row fixed-bottom btn-welcome">
+        <div class="full-width-button-container btn btn-success-category">
+            <% if request.path == categories_path %>
+              <%= button_to "Create New Category",  new_category_path,class:"btn-categories-add btn-success-category", method: :get %>
+            <% else %>
+                <%= button_to "Create New Transaction",  category_new_spending_path(category_id: @category.id),class:"btn-categories-add btn-success-category", method: :get %>
+            <% end %>
+        </div>
+    </div>
+</div>

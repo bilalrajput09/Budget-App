@@ -9,10 +9,4 @@
 
 
 
-<div class="container-fluid">
-    <div class="row fixed-bottom btn-welcome">
-        <div class="full-width-button-container btn btn-success-category">
-            <%= button_to "Create New Category",  new_category_path,class:"btn-categories-add btn-success-category", method: :get %>
-        </div>
-    </div>
-</div>
+<%= render "categories/button_category_spendings"%>
