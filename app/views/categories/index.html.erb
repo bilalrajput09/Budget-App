@@ -1,3 +1,14 @@
+
+<div class="mb-4">
+<% @categories.each do |category| %>
+    <a href="/categories/<%= category.id %>">
+        <%= render category%>
+    </a>
+<% end %>
+</div>
+
+
+
 <div class="container-fluid">
     <div class="row fixed-bottom btn-welcome">
         <div class="full-width-button-container btn btn-success-category">
