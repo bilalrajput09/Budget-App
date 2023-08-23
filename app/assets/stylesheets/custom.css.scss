@@ -55,6 +55,18 @@ nav {
   background-color: white;
 }
 
+.btn-categories-add {
+  padding: 0.5em 1em;
+  width: 80%;
+  color: white;
+  border: 1px solid white;
+  border-radius: 3px;
+}
+
+.btn-success-category {
+  background-color: #5fb523;
+}
+
 .items_container {
   display: flex;
   list-style: none;
