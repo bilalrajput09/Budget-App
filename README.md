@@ -62,9 +62,9 @@
 
 ### Deployment
 
-the site is deployed below:  "https://budget-app-render-jjqs.onrender.com/"
+the site is deployed below:
 
-<a href="#"> Check out the Live Demo here</a>
+<a href="https://budget-app-render-jjqs.onrender.com/"> Check out the Live Demo here</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
