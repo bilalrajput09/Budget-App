@@ -1,0 +1,26 @@
+<head>
+    <nav>
+        <ul class="items_container">
+            <li class="nav_items">
+                <% if request.path == category_new_spending_path(category_id: @category.id) %>
+                    <%= link_to "", category_path(@category.id), class: "bi bi-arrow-left smaller-heading btn-login fa-2x"%>
+                <% else %>
+                    <%= link_to "", root_path, class: "bi bi-arrow-left smaller-heading btn-login fa-2x"%>
+                <% end %>
+            </li>
+            <% if request.path != new_category_path %>
+                <li class="nav_items">
+                    TRANSACTIONS
+                </li>
+            <% else %>
+                <li class="nav_items">
+                Create Category
+                </li>
+            <% end %>
+            
+            <li class="nav_items">
+                <%= link_to "Logout", destroy_user_session_path, class: "nav-link text-white ", data: { turbo_method: :delete }%>
+            </li>
+        </ul>
+      </nav>
+</head>
