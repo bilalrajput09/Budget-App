@@ -1,12 +1,12 @@
 databases:
   - name: postgres
     ipAllowList: []
-    databaseName: photo_app_render
-    user: photo_app_render
+    databaseName: budget_app_render
+    user: budget_app_render
 
 services:
   - type: web
-    name: photo_app_render
+    name: budget_app_render
     env: ruby
     buildCommand: './render-build.sh'
     startCommand: 'bundle exec rails s'
