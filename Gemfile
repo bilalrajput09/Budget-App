@@ -7,6 +7,8 @@ ruby '3.2.2'
 gem 'font-awesome-sass', '~> 6.4.2'
 gem 'pg'
 gem 'rails', '~> 7.0.7'
+gem "faker"
+gem "factory_bot_rails"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
@@ -78,4 +80,6 @@ group :test do
   gem 'capybara'
   gem 'selenium-webdriver'
   gem 'webdrivers'
+  gem 'rspec-rails'
+  gem 'rails-controller-testing'
 end

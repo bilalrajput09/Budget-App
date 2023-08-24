@@ -6,8 +6,11 @@
     <div class="collapse navbar-collapse " id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white">
         <li class="nav-item">
-          <a class="nav-link active text-white " aria-current="page" href="#">Home</a>
           <%= link_to "Logout", destroy_user_session_path, class: "nav-link text-white ", data: { turbo_method: :delete }%>
+        </li>
+
+        <li class="nav-item">
+          <%= link_to "", root_path, class: "bi bi-arrow-left smaller-heading btn-login fa-2x"%>
         </li>
       </ul>
     </div>
@@ -16,6 +19,9 @@
       <a class="navbar-brand" href="#">
       <i class="bi bi-search text-white"></i>
     </a>
+      <% elsif request.path == new_category_path %>
+        <a class="navbar-brand text-white" href="#">New category</a>
+        <%= link_to "Logout", destroy_user_session_path, class: "nav-link text-white ", data: { turbo_method: :delete }%>
       <% else %>
       <a class="navbar-brand text-white" href="#">TRANSACTIONS</a>
       <%= link_to "Logout", destroy_user_session_path, class: "nav-link text-white ", data: { turbo_method: :delete }%>
