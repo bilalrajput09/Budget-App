@@ -1,7 +1,5 @@
 require 'rails_helper'
 
-
-
 RSpec.describe 'Authentication', type: :request do
   let(:user) { User.new(name: 'Bilal Ahmed', email: 'bilal@gmail.com', password: 'password') }
 

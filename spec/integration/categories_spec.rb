@@ -3,7 +3,6 @@ require 'rails_helper'
 RSpec.describe 'Authentication', type: :feature do
   let(:user) { User.new(name: 'Bilal Ahmed', email: 'bilal@gmail.com', password: 'password') }
 
-
   it 'allows a user to sign up' do
     visit new_user_registration_path
     fill_in 'Full name', with: 'Bilal'
@@ -14,7 +13,6 @@ RSpec.describe 'Authentication', type: :feature do
     expect(page).to have_content 'Welcome'
   end
 end
-
 
 RSpec.describe 'Authentication', type: :request do
   let(:user) { User.new(name: 'Bilal Ahmed', email: 'bilal@gmail.com', password: 'password') }
@@ -33,7 +31,6 @@ RSpec.describe 'Authentication', type: :request do
     expect(response).to have_http_status(:success)
   end
 end
-
 
 RSpec.describe 'User', type: :feature do
   let(:user) { FactoryBot.create(:user) }
