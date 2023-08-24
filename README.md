@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <h1><b>Spend Smartly</b></h1>
+  <h1><b>Dollar Dairy</b></h1>
 
 </div>
 
