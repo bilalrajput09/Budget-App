@@ -13,9 +13,9 @@ class ApplicationController < ActionController::Base
   end
 
   def total_spent_calculator(id)
-        @category = Category.find(id)
-        @total_spent = @category.spendings.reduce(0) do |acc, spending|
-            acc + spending.amount
-        end
+    @category = Category.find(id)
+    @total_spent = @category.spendings.reduce(0) do |acc, spending|
+      acc + spending.amount
     end
+  end
 end

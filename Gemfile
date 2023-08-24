@@ -4,11 +4,11 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '3.2.2'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
+gem 'factory_bot_rails'
+gem 'faker'
 gem 'font-awesome-sass', '~> 6.4.2'
 gem 'pg'
 gem 'rails', '~> 7.0.7'
-gem "faker"
-gem "factory_bot_rails"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
@@ -78,8 +78,8 @@ end
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem 'capybara'
+  gem 'rails-controller-testing'
+  gem 'rspec-rails'
   gem 'selenium-webdriver'
   gem 'webdrivers'
-  gem 'rspec-rails'
-  gem 'rails-controller-testing'
 end
