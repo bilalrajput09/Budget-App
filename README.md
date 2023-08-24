@@ -62,7 +62,7 @@
 
 ### Deployment
 
-the site is deployed below:
+the site is deployed below:  "https://budget-app-render-jjqs.onrender.com/"
 
 <a href="#"> Check out the Live Demo here</a>
 
