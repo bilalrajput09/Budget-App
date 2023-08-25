@@ -11,6 +11,11 @@ RSpec.configure do |config|
   config.include Devise::Test::ControllerHelpers, type: :controller
   config.include Devise::Test::IntegrationHelpers, type: :request
   config.include Devise::Test::IntegrationHelpers, type: :feature
+
+  config.after(:all) do
+    # Clean up uploaded images after all tests have run
+    FileUtils.rm_rf(Rails.root.join('spec', 'fixtures', 'test_uploads'))
+  end
 end
 
 # Requires supporting ruby files with custom matchers and macros, etc, in

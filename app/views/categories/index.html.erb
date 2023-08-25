@@ -9,7 +9,7 @@
 
 <div class="mb-4">
 <% @categories.each do |category| %>
-    <a href="/categories/<%= category.id %>">
+    <a href="/categories/<%= category.id %>", id ="category_<%= category.id %>">
         <%= render category%>
     </a>
 <% end %>
