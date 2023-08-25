@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <h1><b>Spend Smartly</b></h1>
+  <h1><b>Dollar Dairy</b></h1>
 
 </div>
 
@@ -14,7 +14,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-    - [🚀Live Demo](#href="https://spend-smartly.onrender.com/.)
+    - [🚀Live Demo](#href="https://budget-app-render-jjqs.onrender.com/.)
     - [Video](#href="https://www.loom.com/share/8747306427bb4d94ab932f2dd7c88fbc?sid=cf1b51e3-8804-427e-8889-056a783e906f")
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
@@ -31,9 +31,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 💳Spend smartly <a name="about-project"></a>
+# 💳Dollar Dairy <a name="about-project"></a>
 
-**Spend smartly App** Your Path to Financial Clarity. Effortlessly manage your finances with a sleek splash screen, intuitive sign-up, and secure login. Explore categories, track transactions, and create a bright financial future. With seamless navigation and smart features like adding new categories and transactions, taking charge of your money has never been more inviting. Tested for quality, built for you – start your financial journey today.
+**Dollar Dairy** Your Path to Financial Clarity. Effortlessly manage your finances with a sleek splash screen, intuitive sign-up, and secure login. Explore categories, track transactions, and create a bright financial future. With seamless navigation and smart features like adding new categories and transactions, taking charge of your money has never been more inviting. Tested for quality, built for you – start your financial journey today.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -64,7 +64,7 @@
 
 the site is deployed below:
 
-<a href="#"> Check out the Live Demo here</a>
+<a href="https://budget-app-render-jjqs.onrender.com/"> Check out the Live Demo here</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
