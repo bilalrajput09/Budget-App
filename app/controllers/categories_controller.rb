@@ -10,16 +10,17 @@ class CategoriesController < ApplicationController
   def new_spending
     @category = Category.find(params[:category_id])
     @spending = Spending.new
+    @categories = current_user.categories
   end
 
   def create_spending
     spending = Spending.new(spending_params)
     if current_user.spendings << spending
-      category_spending = CategorySpending.new(category_id: params[:category_id], spending_id: spending.id)
+      category_spending = CategorySpending.new(category_id: params[:selected_category_id], spending_id: spending.id)
 
       if category_spending.save
         flash[:notice] = 'Spending created successfully'
-        redirect_to category_path(params[:category_id])
+        redirect_to category_path(params[:selected_category_id])
       end
     else
       flash.now[:alert] = 'Something went wrong'
