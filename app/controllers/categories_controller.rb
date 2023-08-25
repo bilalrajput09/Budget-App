@@ -3,10 +3,13 @@ class CategoriesController < ApplicationController
     @categories = current_user.categories
   end
 
-  def new; end
+  def new
+    @category = Category.new
+  end
 
   def new_spending
     @category = Category.find(params[:category_id])
+    @spending = Spending.new
   end
 
   def create_spending
@@ -46,10 +49,10 @@ class CategoriesController < ApplicationController
   private
 
   def category_params
-    params.permit(:name, :icon)
+    params.require(:category).permit(:name, :icon)
   end
 
   def spending_params
-    params.permit(:name, :amount)
+    params.require(:spending).permit(:name, :amount)
   end
 end

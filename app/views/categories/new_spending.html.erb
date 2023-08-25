@@ -1,7 +1,7 @@
 <%= render "spendings/spending_nav"%>
 
 
-<%= form_with model: @Spending, url: category_new_spending_path, class: "mt-4", method: :post do |f| %>
+<%= form_with model: @spending, url: category_new_spending_path, class: "mt-4", method: :post do |f| %>
     <div class="mb-3">
         <%= f.text_field :name, class: "form-control", placeholder: "Name"%>
     </div>
