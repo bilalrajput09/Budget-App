@@ -70,7 +70,7 @@ the site is deployed below:
 
 ### Video
 
-<a href="#">Demonstration video</a>
+<a href="https://www.loom.com/share/d057db61590d4b59ac098cbb6433261b?sid=eb8150e6-e9cf-4d54-b8c9-5ff5e36328e1">Demonstration video</a>
 
 <!-- Features -->
 
