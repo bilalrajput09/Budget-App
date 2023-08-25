@@ -1,0 +1,17 @@
+<%= render "spendings/spending_nav"%>
+
+
+<div class="card text-bg-warning mb-4 mt-3 mx-auto d-flex flex-row" style="width: 30rem;">
+  <div class="card-body">
+    <h5 class="card-title"><%= @category.name %></h5>
+  </div>
+  <div class="card-body d-flex justify-content-end">
+     <h5 class="card-title">Total Spent: $<%= @total_spent %></h5>
+  </div>
+</div>
+
+<%= render @spendings %>
+
+
+
+<%= render "categories/button_category_spendings"%>

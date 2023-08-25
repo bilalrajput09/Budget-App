@@ -1,0 +1,39 @@
+<%= render "devise/shared/error_messages", resource: resource %>
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <head>
+    <nav>
+        <ul class="items_container">
+            <li class="nav_items">
+                <%= link_to "", root_path, class: "bi bi-arrow-left smaller-heading btn-login fa-2x"%>
+            </li>
+            <li class="nav_items">
+                REGISTER
+            </li>
+            <li class="nav_items">
+                <%= f.submit "Next", class: "btn-login" %>
+            </li>
+        </ul>
+      </nav>
+  </head>
+
+  <div class="img_container">
+    <%= image_tag("User-Avatar.png")%>
+    <h3>Upload picture</h3>
+  </div>
+
+  <div class="mb-3">
+    <%= f.text_field :name, autofocus: true, autocomplete: "name", placeholder: "Full name", class: "form-control" %>
+  </div>
+
+  <div class="mb-3">
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control" , placeholder: "Email"%>
+  </div>
+
+  <div class="mb-3">
+    <%= f.password_field :password, autocomplete: "new-password" , placeholder: "Password", class: "form-control"%>
+  </div>
+
+  <div class="mb-3">
+    <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: "Password confirmation", class: "form-control" %>
+  </div>
+<% end %>

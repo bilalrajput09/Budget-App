@@ -1,0 +1,20 @@
+<% if current_user %>
+      <%= render "layouts/navigation"%>
+        <div class="jumbotron text-center mt-5">
+            <h1 class="display-4">Welcome <%= current_user.name %></h1>
+            <p class="lead">You can manage your budget from your cell phone.</p>
+            <hr class="my-4">
+        </div>
+<% end %>
+
+<div class="mb-4">
+<% @categories.each do |category| %>
+    <a href="/categories/<%= category.id %>", id ="category_<%= category.id %>">
+        <%= render category%>
+    </a>
+<% end %>
+</div>
+
+
+
+<%= render "categories/button_category_spendings"%>

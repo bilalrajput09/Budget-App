@@ -1,0 +1,11 @@
+<div class="card text-bg-light mb-4 mt-3 mx-auto d-flex flex-row" style="width: 30rem;">
+    <%= image_tag(category.icon.url, class:"card-img-top img_container") if category.icon? %>
+  <div class="card-body">
+    <h5 class="card-title"><%= category.name %></h5>
+  </div>
+  <div class="card-body d-flex justify-content-end">
+    <% if request.path != "/categories/#{category.id}" %>
+     <h5 class="card-title">Transactions: $<%= total_spent_calculator(category.id) %></h5>
+    <% end %>
+  </div>
+</div>

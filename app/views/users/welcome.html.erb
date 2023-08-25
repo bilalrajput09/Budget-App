@@ -1,0 +1,15 @@
+<div class="container-fluid mb-4">
+    <div class="row">
+        <div class="col-12 center-text">
+            <h1>Dollar Dairy</h1>
+        </div>
+    </div>
+    <div class="row fixed-bottom btn-welcome mb-1">
+        <div class="full-width-button-container">
+            <%= button_to "LOG IN", new_user_session_path,class:"full-width-button btn-1" %>
+        </div>
+        <div class="full-width-button-container">
+            <%= button_to "SIGN UP", new_user_registration_path,class:"full-width-button btn-2", method: :get %>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+<nav class="navbar text-white">
+  <div class="container-fluid">
+    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="bi bi-card-list text-white fa-2x"></i>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white">
+        <li class="nav-item">
+          <%= link_to "Logout", destroy_user_session_path, class: "nav-link text-white ", data: { turbo_method: :delete }%>
+        </li>
+
+        <li class="nav-item">
+          <%= link_to "", root_path, class: "bi bi-arrow-left smaller-heading btn-login fa-2x"%>
+        </li>
+      </ul>
+    </div>
+    <% if request.path == categories_path %>
+      <a class="navbar-brand text-white" href="#">CATEGORIES</a>
+      <a class="navbar-brand" href="#">
+      <i class="bi bi-search text-white"></i>
+    </a>
+      <% elsif request.path == new_category_path %>
+        <a class="navbar-brand text-white" href="#">New category</a>
+        <%= link_to "Logout", destroy_user_session_path, class: "nav-link text-white ", data: { turbo_method: :delete }%>
+      <% else %>
+      <a class="navbar-brand text-white" href="#">TRANSACTIONS</a>
+      <%= link_to "Logout", destroy_user_session_path, class: "nav-link text-white ", data: { turbo_method: :delete }%>
+    <% end %>
+  </div>
+</nav>

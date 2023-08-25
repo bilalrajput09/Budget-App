@@ -1,0 +1,24 @@
+<%= render "spendings/spending_nav"%>
+
+
+<%= form_with model: @spending, url: category_new_spending_path, class: "mt-4", method: :post do |f| %>
+    <div class="mb-3">
+        <%= f.text_field :name, class: "form-control", placeholder: "Name", requried: true %>
+    </div>
+    
+    <div class="mb-3">
+        <%= f.number_field :amount, class: "form-control", placeholder: "Amount", requried: true %>
+    </div>
+
+     <select class="form-select" aria-label="Default select example" name="selected_category_id">
+            <option selected>Select category</option>
+            <% @categories.each do |category| %>
+                <option value="<%= category.id %>"><%= category.name %></option>
+            <% end %> 
+    </select>
+
+    <div class="mb-3 d-flex mt-3 justify-content-center">
+        <%= f.submit "Add Transaction", class: "btn btn-success" %>
+    </div>
+
+<% end %>

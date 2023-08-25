@@ -1,0 +1,27 @@
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <head>
+    <nav>
+        <ul class="items_container">
+            <li class="nav_items">
+                <%= link_to "", root_path, class: "bi bi-arrow-left smaller-heading btn-login fa-2x"%>
+            </li>
+            <li class="nav_items">
+                LOGIN
+            </li>
+            <li class="nav_items">
+                <%= f.submit "Log in", class: "btn-login" %>
+            </li>
+        </ul>
+      </nav>
+  </head>
+  <div class="mb-3">
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control", placeholder: "Email" %>
+  </div>
+  <div class="mb-3">
+    <%= f.password_field :password, autocomplete: "current-password",class: "form-control", placeholder: "Password" %>
+  </div>
+<% end %>
+
+<div class="links_on_login_page">
+  <%= link_to "Forgot password ?", new_user_password_path %>
+</div>
